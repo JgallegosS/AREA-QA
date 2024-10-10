@@ -25,7 +25,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path="/">
-          <PokemonList pokemonList={pokemonList} />
+          <h1>Hola desde el despliegue!</h1>
         </Route>
         <Route path="/pokemon/:name" render={(routeParams) => {
           const pokemonId = pokemonList.find(({ name }) => name === routeParams.match.params.name).id
