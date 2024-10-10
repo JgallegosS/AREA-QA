@@ -22,10 +22,11 @@ const App = () => {
   }
 
   return (
+    <>
+    <h1>Hola desde el despliegue!</h1>
     <Router>
       <Switch>
         <Route exact path="/">
-          <h1>Hola desde el despliegue!</h1>
         </Route>
         <Route path="/pokemon/:name" render={(routeParams) => {
           const pokemonId = pokemonList.find(({ name }) => name === routeParams.match.params.name).id
@@ -34,7 +35,7 @@ const App = () => {
           return <PokemonPage pokemonList={pokemonList} previous={previous} next={next} />
         }} />
       </Switch>
-    </Router>
+    </Router></>
   )
 }
 
