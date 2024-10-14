@@ -9,7 +9,8 @@
     "start": "node app.js",
     "test": "jest",
     "eslint": "eslint './**/*.{js,jsx}'",
-    "build": "webpack --mode production",
+    "build:vercel": "webpack --mode production",
+    "build": "react-scripts build"
     "test:e2e": "npx cypress run"
   },
   "repository": {
